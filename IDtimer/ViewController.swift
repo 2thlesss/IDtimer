@@ -45,14 +45,14 @@ class ViewController: UIViewController {
                }
                
                currentRound = 1
-               remainingTime = roundDurations[currentRound-1] + 1 // add 1 second to the remaining time to start from x
+               remainingTime = roundDurations[currentRound-1]
                timerLabel.text = "\(remainingTime)"
                roundLabel.text = "Round \(currentRound)"
                
                timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] timer in
                    guard let self = self else { return }
                    
-                   if self.remainingTime > 0 { // check if remaining time is greater than 0
+                   if self.remainingTime >= 1 { // check if remaining time is greater than or equal to 1
                        self.remainingTime -= 1
                        self.timerLabel.text = "\(self.remainingTime)"
                    } else {
@@ -64,10 +64,11 @@ class ViewController: UIViewController {
                            self.timerLabel.text = "Done!"
                            self.startButtonTapped.isEnabled = true // enable the button
                        } else {
-                           self.remainingTime = self.roundDurations[self.currentRound-1] + 1 // add 1 second to the remaining time to start from x
+                           self.remainingTime = self.roundDurations[self.currentRound-1]
                            self.timerLabel.text = "\(self.remainingTime)"
                            self.roundLabel.text = "Round \(self.currentRound)"
                        }
+                       if self.currentRound
                    }
                }
            }
