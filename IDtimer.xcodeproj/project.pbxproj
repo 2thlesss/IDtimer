@@ -16,6 +16,7 @@
 		978FF33B29B5557E00CD2B7A /* IDtimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF33A29B5557E00CD2B7A /* IDtimerTests.swift */; };
 		978FF34529B5557E00CD2B7A /* IDtimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF34429B5557E00CD2B7A /* IDtimerUITests.swift */; };
 		978FF34729B5557E00CD2B7A /* IDtimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978FF34629B5557E00CD2B7A /* IDtimerUITestsLaunchTests.swift */; };
+		97AEAE8029B96B8F00F9F249 /* idTimerStruc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AEAE7F29B96B8F00F9F249 /* idTimerStruc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		978FF34029B5557E00CD2B7A /* IDtimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IDtimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		978FF34429B5557E00CD2B7A /* IDtimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDtimerUITests.swift; sourceTree = "<group>"; };
 		978FF34629B5557E00CD2B7A /* IDtimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDtimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		97AEAE7F29B96B8F00F9F249 /* idTimerStruc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = idTimerStruc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,9 @@
 			children = (
 				978FF32329B5557D00CD2B7A /* AppDelegate.swift */,
 				978FF32529B5557D00CD2B7A /* SceneDelegate.swift */,
-				978FF32729B5557D00CD2B7A /* ViewController.swift */,
-				978FF32929B5557D00CD2B7A /* Main.storyboard */,
+				97AEAE8129B96C0300F9F249 /* Model */,
+				97AEAE8229B96C1600F9F249 /* View */,
+				97AEAE8329B96C5B00F9F249 /* Controller */,
 				978FF32C29B5557E00CD2B7A /* Assets.xcassets */,
 				978FF32E29B5557E00CD2B7A /* LaunchScreen.storyboard */,
 				978FF33129B5557E00CD2B7A /* Info.plist */,
@@ -125,6 +128,30 @@
 				978FF34629B5557E00CD2B7A /* IDtimerUITestsLaunchTests.swift */,
 			);
 			path = IDtimerUITests;
+			sourceTree = "<group>";
+		};
+		97AEAE8129B96C0300F9F249 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				97AEAE7F29B96B8F00F9F249 /* idTimerStruc.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		97AEAE8229B96C1600F9F249 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				978FF32929B5557D00CD2B7A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		97AEAE8329B96C5B00F9F249 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				978FF32729B5557D00CD2B7A /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97AEAE8029B96B8F00F9F249 /* idTimerStruc.swift in Sources */,
 				978FF32829B5557D00CD2B7A /* ViewController.swift in Sources */,
 				978FF32429B5557D00CD2B7A /* AppDelegate.swift in Sources */,
 				978FF32629B5557D00CD2B7A /* SceneDelegate.swift in Sources */,

@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var startButtonTapped: UIButton!
+    @IBOutlet weak var instructionsByRound : UILabel!
     
     
     @IBOutlet weak var roundLabel: UILabel!
@@ -68,7 +69,7 @@ class ViewController: UIViewController {
                            self.timerLabel.text = "\(self.remainingTime)"
                            self.roundLabel.text = "Round \(self.currentRound)"
                        }
-                       if self.currentRound
+                       
                    }
                }
            }
